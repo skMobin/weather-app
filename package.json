@@ -1,0 +1,23 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "This is a Weather Application which gives insights about a weather of any location built on DarkSky API using NodeJS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.88.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skMobin/weather-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/skMobin/weather-app/issues"
+  },
+  "homepage": "https://github.com/skMobin/weather-app#readme"
+}
