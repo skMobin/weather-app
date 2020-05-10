@@ -5,7 +5,7 @@ const forecast = require('./../utils/forecast')
 const geocoding = require('./../utils/gecoding')
 
 const app = express()
-
+const port = process.env.PORT || 3000
 //config path for express
 const pathDirectory = path.join(__dirname,'../templates')
 const viewpaths = path.join(__dirname,'../templates/views')
@@ -61,6 +61,6 @@ app.get('*', (req, res) => {
     res.render("404", { title: "404 page not found", content: "404 page not found" })
 })
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log("server is running!!")
 })
