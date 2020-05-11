@@ -22,11 +22,11 @@ app.get('',(req, res)=>{
 })
 
 app.get('/help', (req, res) => {
-    res.render('help',{title : "help" ,name:"sk Mobin"})
+    res.render('help',{title : "Help" ,name:"sk Mobin"})
 })
 
 app.get('/about', (req, res) => {
-    res.render('about', { title: "about", name: "sk Mobin"})
+    res.render('about', { title: "About", name: "sk Mobin"})
 })
 
 app.get('/weather',(req,res)=>{
@@ -54,7 +54,7 @@ app.get('/weather',(req,res)=>{
    
 
 app.get('/help*',(req,res)=>{
-    res.render("404",{title:"help 404",content : "404 help page not found"})
+    res.render("404",{title:"Help 404",content : "404 help page not found"})
 })
 
 app.get('*', (req, res) => {
