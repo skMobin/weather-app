@@ -8,7 +8,7 @@ const forecast = (latitude,longitude,location,callback) =>{
         } else if (response.body.message) {
             callback("Unable to find Location(in the World).",undefined)
         } else {
-            forecastupdate = response.body.weather[0].description
+            forecastupdate = response.body.weather[0].description +", "+ response.body.weather[0].main
             temperature = response.body.main.temp
              callback(undefined, { latitude, longitude, location,temperature, forecastupdate })
         }
